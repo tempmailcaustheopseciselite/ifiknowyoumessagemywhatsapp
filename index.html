@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gone</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <style>
+        /* Page Background */
+        body {
+            background-color: #0d0d0d;
+            color: #00ff00;
+            font-family: 'Press Start 2P', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            margin: 0;
+        }
+
+        /* Fake OS Window */
+        .os-window {
+            background-color: #111;
+            width: 500px;
+            border: 2px solid #00ff00;
+            border-radius: 5px;
+            box-shadow: 0px 0px 20px rgba(0, 255, 0, 0.5);
+            overflow: hidden;
+        }
+
+        /* Title Bar */
+        .title-bar {
+            background: #050505;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 12px;
+            color: #00ff00;
+            border-bottom: 2px solid #00ff00;
+        }
+
+        /* Close Button */
+        .close-btn {
+            width: 12px;
+            height: 12px;
+            background-color: red;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        /* Content */
+        .content {
+            padding: 20px;
+            text-align: left;
+        }
+
+        /* Glowing Text */
+        h2 {
+            font-size: 18px;
+            color: #00ff00;
+            text-shadow: 0px 0px 10px #00ff00;
+        }
+
+        p {
+            font-size: 12px;
+            line-height: 1.8;
+            text-shadow: 0px 0px 5px #00ff00;
+        }
+
+        /* Highlight Every 10th Word */
+        .highlight {
+            color: #FFD700;
+            text-shadow: 0px 0px 5px #FFD700;
+        }
+
+        /* Fake Terminal Cursor */
+        .cursor {
+            display: inline-block;
+            width: 8px;
+            height: 12px;
+            background-color: #00ff00;
+            animation: blink 0.8s infinite alternate;
+        }
+
+        @keyframes blink {
+            from { opacity: 1; }
+            to { opacity: 0; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="os-window">
+    <!-- Title Bar -->
+    <div class="title-bar">
+        <span>System Log - /var/log/gone</span>
+        <div class="close-btn"></div>
+    </div>
+
+    <!-- Content -->
+    <div class="content">
+        <h2>Gone</h2>
+        <p>
+            The team is <span class="highlight">taking</span> a break since <span class="highlight">Ryal</span> got fedded. We <span class="highlight">will</span> be gone <span class="highlight">for</span> now, but <span class="highlight">not</span> forever. <span class="highlight">Stay</span> safe, and <span class="highlight">wait</span> for the <span class="highlight">return. Remember stay anti ext & ethical </span>.
+        </p>
+        <span class="cursor"></span>
+    </div>
+</div>
+
+</body>
+</html>
